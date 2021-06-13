@@ -16,6 +16,9 @@ player = Player()
 #Create score board
 scoreboard = Scoreboard()
 
+#Create random traffic
+car_manager = CarManager()
+
 #Listen for keypress
 screen.listen()
 screen.onkeypress(player.move_up,"Up")
@@ -28,6 +31,8 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+    car_manager.create_car()
+    car_manager.full_throttle()
     #Finish line and rest position to start
     player.finish_line()
     if player.finish_line() == True:

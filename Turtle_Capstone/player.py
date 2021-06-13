@@ -1,6 +1,6 @@
 from turtle import Turtle
-STARTING_POSITION = (0, -280)
-MOVE_DISTANCE = 10
+START_POS = (0, -280)
+BRAVE_MOVE = 10
 FINISH_LINE_Y = 280
 
 
@@ -11,13 +11,21 @@ class Player(Turtle):
         self.shape("turtle")
         self.setheading(90)
         self.penup()
-        self.goto(STARTING_POSITION)
+        self.running_start()
+
+
+    def running_start(self):
+        self.goto(START_POS)
 
     def finish_line(self):
         if self.ycor() > FINISH_LINE_Y :
-            self.goto(STARTING_POSITION)
+            return True
+        else:
+            return False
+            # self.goto(STARTING_POSITION)
+            # car_manager.road_rage()
 
     def move_up(self):
-        self.forward(MOVE_DISTANCE)
+        self.forward(BRAVE_MOVE)
 
 

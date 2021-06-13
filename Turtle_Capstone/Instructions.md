@@ -5,6 +5,6 @@
 > "Turtle graphics".
 
 
->>>>### To Play : Use the "UP" arrow to move your critter up the road,you can ONLY move up. Everytime you reach the finish line , you return to start and the cars speed up. Enjoy!
+>### To Play : Use the "UP" arrow to move your critter up the road,you can ONLY move up. Everytime you reach the finish line , you return to start and the cars speed up. Enjoy!
 
 
